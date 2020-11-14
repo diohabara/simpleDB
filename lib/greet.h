@@ -1,11 +1,11 @@
 #pragma once
 
-#include<iostream>
+#include <iostream>
 
 class Greet {
-  public:
-    static int hello(std::string name) {
-      std::cout << "Hello " << name << "!" << std::endl;
-      return 0;
-    }
+ public:
+  static int hello(std::string name) {
+    std::cout << "Hello " << name << "!" << std::endl;
+    return 0;
+  }
 };
