@@ -8,5 +8,6 @@ cc_binary(
     ],
     deps = [
         "//lib:greet",
+        "//src/includes:add",
     ],
 )
