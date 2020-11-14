@@ -1,0 +1,14 @@
+cc_test(
+    name = "unit_test",
+    srcs=[
+        "test_greet.cc",
+    ],
+    copts = [
+        "-std=c++17",
+    ],
+    deps = [
+        "//lib:greet",
+        "@gtest",
+        "@gtest//:gtest_main",
+    ]
+)

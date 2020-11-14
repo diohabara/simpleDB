@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
-clang-format -i *.cpp
+buildifier -r .
+clang-format -i src/*.cc
