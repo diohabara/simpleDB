@@ -1,6 +1,6 @@
 cc_test(
     name = "unit_test",
-    srcs=[
+    srcs = [
         "test_greet.cc",
     ],
     copts = [
@@ -10,5 +10,5 @@ cc_test(
         "//lib:greet",
         "@gtest",
         "@gtest//:gtest_main",
-    ]
+    ],
 )
