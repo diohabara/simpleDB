@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 buildifier -r .
-clang-format -i src/*.cc
+clang-format -i -style=Google **/*.cc **/*.h
