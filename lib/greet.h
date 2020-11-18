@@ -1,6 +1,7 @@
-#pragma once
-
 #include <iostream>
+#include <string>
+
+std::string greet(std::string name);
 
 class Greet {
  public:
