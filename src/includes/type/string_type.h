@@ -1,9 +1,9 @@
 #include "src/includes/type/type.h"
 
 namespace simple_db {
-class BooleanType : public Type {
+class StringType : public Type {
  public:
-  ~BooleanType() override = default;
-  BooleanType();
+  ~StringType() override = default;
+  StringType();
 };
 }  // namespace simple_db

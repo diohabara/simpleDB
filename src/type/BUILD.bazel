@@ -12,3 +12,42 @@ cc_library(
         "//src/includes/type:boolean",
     ],
 )
+
+cc_library(
+    name = "integer",
+    srcs = [
+        "integer_type.cc",
+    ],
+    copts = [
+        "-std=c++17",
+    ],
+    deps = [
+        "//src/includes/type:integer",
+    ],
+)
+
+cc_library(
+    name = "string",
+    srcs = [
+        "string_type.cc",
+    ],
+    copts = [
+        "-std=c++17",
+    ],
+    deps = [
+        "//src/includes/type:string",
+    ],
+)
+
+cc_library(
+    name = "timestamp",
+    srcs = [
+        "timestamp_type.cc",
+    ],
+    copts = [
+        "-std=c++17",
+    ],
+    deps = [
+        "//src/includes/type:timestamp",
+    ],
+)
