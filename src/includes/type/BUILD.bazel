@@ -1,0 +1,39 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "boolean",
+    hdrs = ["boolean_type.h"],
+    visibility = ["//src:__subpackages__"],
+    deps = ["//src/includes/type"],
+)
+
+cc_library(
+    name = "integer",
+    hdrs = ["integer_type.h"],
+    visibility = ["//src:__pkg__"],
+)
+
+cc_library(
+    name = "string",
+    hdrs = ["string_type.h"],
+    visibility = ["//src:__pkg__"],
+)
+
+cc_library(
+    name = "timestamp",
+    hdrs = ["timestamp_type.h"],
+    visibility = ["//src:__pkg__"],
+)
+
+cc_library(
+    name = "type_id",
+    hdrs = ["type_id.h"],
+    visibility = ["//src:__subpackages__"],
+)
+
+cc_library(
+    name = "type",
+    hdrs = ["type.h"],
+    visibility = ["//src:__subpackages__"],
+    deps = ["//src/includes/type:type_id"],
+)
