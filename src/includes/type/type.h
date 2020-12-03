@@ -9,8 +9,6 @@ class Type {
 
   virtual ~Type() = default;
 
-  static uint64_t GetTypeSize(TypeId type_id);
-
   inline TypeId GetTypeId() const { return type_id_; }
 
  protected:
