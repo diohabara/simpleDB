@@ -15,5 +15,4 @@ bazel test //... # test
 
 - `bin`: utilities
 - `src`: sources of this DB
-- `lib`: library of this DB
 - `test`: tests of this DB
