@@ -2,12 +2,12 @@
 
 ![CI](https://github.com/diohabara/simpleDB/workflows/CI/badge.svg)
 
-mimic https://github.com/cmu-db/bustub
+mimic <https://github.com/cmu-db/bustub>
 
 ## Usage
 
 ```sh
-bazel run --run_under="cd $PWD &&" bin:format # format source codes
+bazel run //bin:format -- "${PWD}"
 bazel test //... # test
 ```
 
