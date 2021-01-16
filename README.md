@@ -7,7 +7,7 @@ mimic <https://github.com/cmu-db/bustub>
 ## Usage
 
 ```sh
-bazel run //bin:format -- "${PWD}"
+bazel run --run_under="cd $PWD &&" bin:format
 bazel test //... # test
 ```
 
